@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/cp.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
+    <title>Photography Blog</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar__logo-container" href="#">
+        <img
+          class="navbar__logo"
+          src="images/cp.png"
+          alt="CP photography logo"
+        />
+      </a>
+    </nav>
+    <main class="main">
+      <p class="most-recent">Most recent post</p>
+      <div class="frame">
+        <article class="article">
+          <div class="article__content">
+            <div class="content__info">
+              <span class="content__info-date">Thursday, January 26th</span>
+              <span class="content__info-location">NYC</span>
+            </div>
+            <h1 class="content__title">Photos in New York City</h1>
+            <p class="content__preview">
+              This is the start of my photography blog. Excited to share with
+              you guys the adventures I'm going on over the next few months
+            </p>
+          </div>
+          <div class="article__images">
+            <img src="images/street.png" class="img-large" />
+            <div class="img-bg"></div>
+            <div class="img-container top">
+              <img src="images/night.png" class="img-small" />
+            </div>
+            <div class="img-container left">
+              <img src="images/street-evening.png" class="img-small" />
+            </div>
+            <div class="img-container right">
+              <img src="images/evening.png" class="img-small" />
+            </div>
+          </div>
+          <div class="article__location">
+            <span class="location">Midtown E 42 St1 Av New York</span>
+          </div>
+        </article>
+        <a href="#" class="frame-button">
+          <span class="button-text">View post - 24 images</span>
+          <span class="button-text-hidden">View post - 32 images</span>
+        </a>
+        <article class="article-hidden">
+          <div class="article__content">
+            <div class="content__info">
+              <span class="content__info-date">Monday, January 3rd</span>
+              <span class="content__info-location">SFO</span>
+            </div>
+            <h1 class="content__title">We're going to San Francisco</h1>
+            <p class="content__preview">
+              Team offsite in San Francisco was absolutely incredible. So
+              awesome meeting the team and getting a nice tour around the
+              beautiful city.
+            </p>
+          </div>
+          <div class="article__images">
+            <img src="images/night.png" class="img-large" />
+            <div class="img-bg"></div>
+            <div class="img-container top">
+              <img src="images/bridge.png" class="img-small" />
+            </div>
+            <div class="img-container left">
+              <img src="images/road.png" class="img-small" />
+            </div>
+            <div class="img-container right">
+              <img src="images/buildings1.png" class="img-small" />
+            </div>
+          </div>
+          <div class="article__location">
+            <span class="location">San Francisco Skyline</span>
+          </div>
+        </article>
+      </div>
+    </main>
+    <script src="animations.js"></script>
+  </body>
+</html>
